@@ -19,6 +19,7 @@ classNames('foo', 'bar'); // => 'foo bar'
 classNames('foo', { bar: true }); // => 'foo bar'
 classNames({ foo: true }, { bar: true }); // => 'foo bar'
 classNames({ foo: true, bar: true }); // => 'foo bar'
+classNames('foo', { foo: false, bar: true }); // => 'bar'
 
 // lots of arguments of various types
 classNames('foo', { bar: true, duck: false }, 'baz', { quux: true }) // => 'foo bar baz quux'
